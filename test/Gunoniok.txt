@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+    int n, reminder, i;
+    reminder = 0;
+    //Input er Gunitok ber kora: Nisheshe Vibajjo holei gunitok.
+    scanf("%i", &n);
+    for(i=1; i<=n; i++){
+        reminder = n % i;
+        if(reminder > 0){
+            continue;
+        }else{
+            printf("%i \n", i);
+        }
+    }
+    return 0;
+}
